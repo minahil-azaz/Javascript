@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-10">
+
+<div class="max-w-3xl mx-auto bg-white p-8 shadow rounded">
+    
+    <form id="myForm" class="space-y-6">
+
+        <h2 class="text-2xl font-bold text-center">Registration Form</h2>
+
+        <!-- First + Last Name -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+                <label class="font-bold">First Name</label>
+                <input type="text" id="first_name" class="w-full border px-3 py-2 rounded">
+                <p id="first_name_error" class="text-red-500 text-sm"></p>
+            </div>
+
+            <div>
+                <label class="font-bold">Last Name</label>
+                <input type="text" id="last_name" class="w-full border px-3 py-2 rounded">
+                <p id="last_name_error" class="text-red-500 text-sm"></p>
+            </div>
+        </div>
+
+        <!-- Email + Phone -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+                <label class="font-bold">Email</label>
+                <input type="email" id="email" class="w-full border px-3 py-2 rounded">
+                <p id="email_error" class="text-red-500 text-sm"></p>
+            </div>
+
+            <div>
+                <label class="font-bold">Phone</label>
+                <input type="tel" id="phone" class="w-full border px-3 py-2 rounded">
+                <p id="phone_error" class="text-red-500 text-sm"></p>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label class="font-bold">Password</label>
+            <input type="password" id="password" class="w-full border px-3 py-2 rounded">
+            <p id="password_error" class="text-red-500 text-sm"></p>
+        </div>
+
+        <!-- Confirm Password -->
+        <div>
+            <label class="font-bold">Confirm Password</label>
+            <input type="password" id="confirm_password" class="w-full border px-3 py-2 rounded">
+            <p id="confirm_password_error" class="text-red-500 text-sm"></p>
+        </div>
+
+        <!-- Message -->
+        <div>
+            <label class="font-bold">Message</label>
+            <textarea id="message" rows="3" class="w-full border px-3 py-2 rounded"></textarea>
+            <p id="message_error" class="text-red-500 text-sm"></p>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit"
+            class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+            Submit
+        </button>
+
+    </form>
+
+</div>
+
+<!-- ✅ JS at bottom -->
+<script src="index.js"></script>
+
+</body>
+</html>
